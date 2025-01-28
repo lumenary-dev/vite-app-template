@@ -12,7 +12,7 @@ type SDKType = {
   properties: Record<string, string>;
 };
 
-function App() {
+function DebugSdk() {
   const [types, setTypes] = useState<SDKType[]>([]);
   const [functions, setFunctions] = useState<SDKFunction[]>([]);
   const [activeTab, setActiveTab] = useState<"types" | "functions">("types");
@@ -166,4 +166,4 @@ function getTypeProperties(type: any): Record<string, string> {
   );
 }
 
-export default App;
+export default DebugSdk;

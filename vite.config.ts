@@ -12,6 +12,9 @@ export default defineConfig({
   },
   server: {
     host: true,
+    hmr: {
+      overlay: false,
+    },
     allowedHosts: true,
     headers: {
       "Access-Control-Allow-Origin": "*",

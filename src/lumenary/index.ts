@@ -74,7 +74,7 @@ const Lumenary = (function () {
 
     const promise = (async () => {
       const response = await fetch(
-        'https://api.fireworks.ai/inference/v1/workflows/accounts/fireworks/models/flux-1-dev-fp8/text_to_image',
+        'https://api.fireworks.ai/inference/v1/image_generation/accounts/fireworks/models/SSD-1B',
         {
           method: 'POST',
           headers: {
